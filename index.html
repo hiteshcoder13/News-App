@@ -5,114 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <link rel="stylesheet" href="news.css">
-    <style>nav{
+    <style>nav {
     display: flex;
     background-color: rgb(110, 117, 210);
+    flex-wrap: wrap;
+    padding: 10px;
 }
-.search{
-    margin-left: 100vh;
-    margin-top: 30px;
 
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
 }
-#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9{
-    width: 400px;
+
+#search {
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
 }
-#search{
-font-size: 20px;
-border: none;
-border-radius: 3px;
-}
-.search-btn{
-    margin-top: 30px;
+
+.search-btn {
     margin-left: 10px;
-    
 }
-a{
+
+#search-btn {
+    background-color: lightsteelblue;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+a {
     text-decoration: none;
     color: rgb(58, 57, 57);
-    font-size: 10vmin;
-    margin-left: 30px;
+    font-size: 3vmin;
+    margin-left: 10px;
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#search-btn{
-    background-color: lightsteelblue;
-    font-size: 20px;
-    border: none;
-    border-radius: 3px;
-}
 
-.newsbox{
+.newsbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 30px;
     border: 2px solid rgb(91, 175, 91);
-    height: 40vmax;
-    width: 95vmax;
-    margin-left: 30px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.A,.B{
-    display: flex;
-}
-
-.a{
-    /* display: flex; */
-    width: 400px;
-    height: 260px;
+.a, .b, .c, .d, .e, .f {
+    width: calc(33% - 20px);
+    height: auto;
     border: 2px solid black;
-    margin: 3px;
-    margin-top: 20px;
-    margin-left: 23px;
-}
-.a{
-    margin-left: 40px;
-    /* width: fit-content; */
-}
-/* .d,.e,.f{
-    /* display: flex; */
-    /* width: 400px;
-    height: 260px;
-    border: 2px solid black;
-    margin: 3px;
-    margin-top: 8px;
-    margin-left: 23px;
-}
-.d{
-    margin-left: 40px;
-} */ 
-
-.a img,.b img,.c img,.d img,.e img,.f img{
-    height: 150px;
-    /* width: 300px; */
-    width: 400px;
-    /* margin-left: 50px; */
-    
-   
+    margin: 10px;
+    flex-grow: 1;
 }
 
-.a h1,.b h1,.c h1,.d h1,.e h1,.f h1,.g h1{
-    margin-top: -8px;
+.a img, .b img, .c img, .d img, .e img, .f img {
+    width: 100%;
+    height: auto;
+}
+
+.a h1, .b h1, .c h1, .d h1, .e h1, .f h1, .g h1 {
     text-align: center;
 }
 
-.a p,.b p,.c p,.d p,.e p,.f p{
-    margin-top: 0px;
-    margin-left: 7px;
-    margin-right: 7px;
-    font-size: 20px;
-
+.a p, .b p, .c p, .d p, .e p, .f p {
+    margin: 0 7px;
+    font-size: 16px;
 }
- 
-.a:hover,.b:hover,.c:hover,.d:hover,.e:hover,.f:hover{
+
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .f:hover {
     border: 4px solid black;
     border-radius: 15px;
 }
-a{
-padding: 0;
-margin: 0;
+
+a {
+    padding: 0;
+    margin: 0;
 }
+
+@media (max-width: 1200px) {
+    .a, .b, .c, .d, .e, .f {
+        width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .a, .b, .c, .d, .e, .f {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    #search {
+        font-size: 14px;
+    }
+
+    #search-btn {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 4vmin;
+    }
+}
+
 
 </style>
 </head>
