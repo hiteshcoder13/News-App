@@ -161,10 +161,10 @@ a {
 
  <script>
    
-    let url = "https://newsdata.io/api/1/news?apikey=pub_45256a4d868c22fa9ccc769ee6131493a96b6a&q=";
+    let url = "https://newsdata.io/api/1/news?apikey=pub_45256a4d868c22fa9ccc769ee6131493a96b6&q=";
     let api = async () => {
         let input = document.getElementById('search').value;
-        url = "https://newsdata.io/api/1/news?apikey=pub_45256a4d868c22fa9ccc769ee6131493a96b6a&q="+ input;
+        url = "https://newsdata.io/api/1/news?apikey=pub_45256a4d868c22fa9ccc769ee6131493a96b6&q="+ input;
         let response = await fetch(url);
         let data = await response.json();
        let para1 = data.results[0].title;
